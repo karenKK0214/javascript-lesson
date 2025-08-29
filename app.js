@@ -138,15 +138,13 @@ console.log(numbers)
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (i = 0; i < mixed.length; i++) {
-  // console.log(mixed[i]); // mixedの中を表示
-  // console.log(typeof(mixed[i]))
-  if (typeof(mixed[i]) === 'number'){ // 数字の場合
-    if (mixed[i] % 2 === 0){ // Number であり偶数の場合
+  if (typeof(mixed[i]) === 'number'){ 
+    if (mixed[i] % 2 === 0){ 
       console.log('even')
-    }else { // Number であり奇数の場合
+    }else { 
       console.log('odd')
     }
-  } else { // 数字以外の場合
+  } else { 
     console.log('not number')
   }
 } 
