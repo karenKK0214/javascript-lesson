@@ -1,14 +1,12 @@
 // Q1
 let nickname = 'ひさか';
-// nickname = 'a';
-// let nickname = 'aaaaaa';
 console.log(nickname);
 let age = '27';
 console.log(age);
-console.log('私のニックネームは'+nickname+'です。年齢は'+age+'歳です。');
+console.log('私のニックネームは' + nickname + 'です。年齢は' + age + '歳です。');
 // Q2
-let languages = ['JavaScript','PHP','Ruby','Python','Go']
-console.log('私の好きな言語は'+languages[0]+'です。次は'+languages[3]+'を勉強してみたいです。');
+let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go']
+console.log('私の好きな言語は' + languages[0] + 'です。次は' + languages[3] + 'を勉強してみたいです。');
 // Q3
 let user = {
   name: 'John',
@@ -37,13 +35,24 @@ let playerList = [
 ];
 console.log(playerList[1].favorites[1]);
 // Q5
-console.log(playerList.length);
-console.log(playerList[0].age);
-console.log(playerList[1].age);
-console.log(playerList[2].age);
+let totalAge = 0;
+for (i = 0; i < playerList.length; i++) {
+  totalAge = totalAge + playerList[i].age
+ console.log(playerList[i].age);
+}
+console.log(totalAge)
 
-let totalAge = playerList[0].age + playerList[1].age + playerList[2].age;
+
+// console.log(playerList.length);
+// console.log(playerList[0].age);
+// console.log(playerList[1].age);
+// console.log(playerList[2].age);
+
+// let totalAge = playerList[0].age + playerList[1].age + playerList[2].age;
 console.log(totalAge / playerList.length);
+
+
+
 // Q6
 function sayHello() {
   console.log('Hallo');
@@ -65,12 +74,12 @@ user.sayHello();
 // 和
 let calc = {}
 // let calc = {
-//   add: function(x,y) {
+//   add: function(x, y) {
 //     let plus = x + y;
 //     console.log(plus);
 //   }
 // };
-// calc.add(3,4);
+// calc.add(3, 4);
 calc.add = function(x, y) { // 仮引数
   let plus = x + y;
   console.log(plus);
@@ -78,7 +87,7 @@ calc.add = function(x, y) { // 仮引数
 calc.add(3, 4); // 実引数
 // calc.add(2, 8); // 実引数
 // calc.add(9, 10); // 実引数
-// 差
+// 差f
 calc.subtract = function(x, y) {
     let minus = x - y;
     console.log(minus);
@@ -97,12 +106,12 @@ calc.divide = function(x, y) {
   }
 calc.divide(10, 2);
 // Q9
-function remainder(x,y) {
+function remainder(x, y) {
   return  x % y
 }
 let num1 = 5
 let num2 = 3
-console.log('5を3で割った余りは' + remainder(num1,num2) + 'です。')
+console.log('5を3で割った余りは' + remainder(num1, num2) + 'です。')
 
 // Q10
 // function foo() {
