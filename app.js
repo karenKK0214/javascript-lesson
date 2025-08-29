@@ -42,16 +42,7 @@ for (i = 0; i < playerList.length; i++) {
 }
 console.log(totalAge)
 
-
-// console.log(playerList.length);
-// console.log(playerList[0].age);
-// console.log(playerList[1].age);
-// console.log(playerList[2].age);
-
-// let totalAge = playerList[0].age + playerList[1].age + playerList[2].age;
 console.log(totalAge / playerList.length);
-
-
 
 // Q6
 function sayHello() {
@@ -73,21 +64,11 @@ user.sayHello();
 // Q8
 // 和
 let calc = {}
-// let calc = {
-//   add: function(x, y) {
-//     let plus = x + y;
-//     console.log(plus);
-//   }
-// };
-// calc.add(3, 4);
-calc.add = function(x, y) { // 仮引数
+calc.add = function(x, y) { 
   let plus = x + y;
   console.log(plus);
 }
-calc.add(3, 4); // 実引数
-// calc.add(2, 8); // 実引数
-// calc.add(9, 10); // 実引数
-// 差f
+calc.add(3, 4); 
 calc.subtract = function(x, y) {
     let minus = x - y;
     console.log(minus);
